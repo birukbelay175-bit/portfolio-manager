@@ -2,16 +2,21 @@ package com.pluralsight.finance;
 
 public class Jewelry extends FixedAsset {
 
-    private String material;
+    private double karat;
 
-    public Jewelry(String name, double marketValue, String material) {
+    public Jewelry(String name, double marketValue, double karat) {
 
         super(name, marketValue);
 
-        this.material = material;
+        this.karat = karat;
     }
 
-    public String getMaterial() {
-        return material;
+    public double getKarat() {
+        return karat;
+    }
+
+    @Override
+    public double getValue() {
+        return getMarketValue();
     }
 }

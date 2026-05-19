@@ -27,4 +27,9 @@ public class House extends FixedAsset {
     public int getBedrooms() {
         return bedrooms;
     }
+
+    @Override
+    public double getValue() {
+        return getMarketValue();
+    }
 }
