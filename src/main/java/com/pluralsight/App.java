@@ -18,5 +18,17 @@ public class App {
 
         System.out.println("Portfolio Name: " + portfolio.getName());
         System.out.println("Total Portfolio Value: $" + portfolio.getValue());
+        Valuable mostValuable =
+                PortfolioManager.getMostValuable(portfolio);
+
+        Valuable leastValuable =
+                PortfolioManager.getLeastValuable(portfolio);
+
+        System.out.println("Most Valuable Item: $" +
+                mostValuable.getValue());
+
+        System.out.println("Least Valuable Item: $" +
+                leastValuable.getValue());
+
     }
 }
