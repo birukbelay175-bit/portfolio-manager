@@ -29,6 +29,5 @@ public class App {
 
         System.out.println("Least Valuable Item: $" +
                 leastValuable.getValue());
-
     }
 }
